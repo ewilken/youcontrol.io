@@ -1,0 +1,25 @@
+header.masthead.bg-img {
+  background: url('../img/bg-hero.jpg'), $theme-secondary;
+  background: url('../img/bg-hero.jpg'), -webkit-linear-gradient(to left, $theme-secondary, $theme-tertiary);
+  background: url('../img/bg-hero.jpg'), linear-gradient(to left, $theme-secondary, $theme-tertiary);
+  background-position: center;
+  background-size: cover;
+
+  .header-content {
+    h1 {
+      margin-bottom: 18px;
+    }
+
+    p {
+      margin-bottom: 28px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .header-content {
+      h1 {
+        font-size: 58px;
+      }
+    }
+  }
+}

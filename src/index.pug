@@ -1,0 +1,124 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    title youcontrol.io
+    link(rel='stylesheet' type='text/css' href='css/main.css')
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato')
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900')
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli")
+
+  body#page-top
+    nav.navbar.navbar-expand-lg.navbar-light.fixed-top#mainNav
+      .container
+        a.navbar-brand.js-scroll-trigger(href='#page-top') youcontrol.io
+        button.navbar-toggler.navbar-toggler-right(
+          type='button'
+          data-toggle='collapse'
+          data-target='#navbarResponsive'
+          aria-controls='navbarResponsive'
+          aria-expanded='false'
+          aria-label='Toggle navigation'
+        ) 
+          Menu
+          i.fa.fa-bars
+        .collapse.navbar-collapse#navbarResponsive
+          ul.navbar-nav.ml-auto
+            li.nav-item
+              a.nav-link.js-scroll-trigger(href='#features') Features
+            li.nav-item
+              a.nav-link.js-scroll-trigger(href='#contact') Get Notified
+
+    header.masthead.bg-img
+      .container.h-100
+        .row.h-100
+          .col-lg-7.my-auto
+            .header-content.mx-auto.text-center
+              h1 Hack your own smart home!
+              p
+                | The first smart socket that runs your code.
+                br
+                | No API, no cloud, just raw control in any language.
+              a.btn.btn-outline.btn-xl.js-scroll-trigger(href='#contact') Get Yours!
+          .col-lg-5.my-auto
+            img.img-fluid.mx-auto(src='img/plug-1.png' alt='youcontrol plug')
+
+    section.languages.bg-primary.text-center#languages
+      .container
+        .section-heading.text-center
+          h2 It speaks your language.
+          p Insert catchy phrase.
+          hr
+        .row
+          .col-md-2.col-sm-4.col-6
+            i.icon-ruby
+          .col-md-2.col-sm-4.col-6
+            i.icon-php
+          .col-md-2.col-sm-4.col-6
+            i.icon-python
+          .col-md-2.col-sm-4.col-6
+            i.icon-cplusplus
+          .col-md-2.col-sm-4.col-6
+            i.icon-rust
+          .col-md-2.col-sm-4.col-6
+            i.icon-nodejs
+
+    section.features#features
+      .container
+        .section-heading.text-center
+          h2 Unlimited possibilities, no vendor lock-in.
+          p.text-muted Check out what you can do with it.
+          hr
+        .row
+          .col-lg-4.col-md-6
+            .feature-item
+              i.mdi.mdi-wifi.mdi-dark
+              h3 Standard WiFi
+              p.text-muted Connect it directly to your home network.
+          .col-lg-4.col-md-6
+            .feature-item
+              i.mdi.mdi-chart-areaspline.mdi-dark
+              h3 Energy Monitoring
+              p.text-muted Measure your power consumption.
+          .col-lg-4.col-md-6
+            .feature-item
+              i.mdi.mdi-linux.mdi-dark
+              h3 Linux
+              p.text-muted Upstream Linux with full root access.
+          .col-lg-4.col-md-6
+            .feature-item
+              i.mdi.mdi-cloud-off-outline.mdi-dark
+              h3 Cloud Free
+              p.text-muted Cloud free privacy and control.
+          .col-lg-4.col-md-6
+            .feature-item
+              i.mdi.mdi-github-circle.mdi-dark
+              h3 Community-Driven
+              p.text-muted Create and share your apps with the community.
+
+    section.cta
+      .cta-content
+        .container.text-center
+          h2.mx-auto
+            | Stop waiting.
+            br
+            | Start building.
+          a.btn.btn-outline.btn-xl.js-scroll-trigger(href='#contact') Get Notified!
+      .overlay
+
+    section.contact.bg-primary#contact
+      .container
+        .section-heading
+          h2 Get notified of product launches!
+
+    footer
+      .container
+        p &copy; 2017 youcontrol.io.
+        ul.list-inline
+          li.list-inline-item
+            a(href='#') Privacy
+          li.list-inline-item
+            a(href='#') Terms
+
+    script(src='app.js')
