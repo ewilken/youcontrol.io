@@ -22,10 +22,13 @@
   },
   "devDependencies": {
     "browser-sync": "^2.23.2",
-    "gulp": "^3.9.1",
+    "gulp": "github:gulpjs/gulp#4.0",
     "gulp-browserify": "^0.5.1",
+    "gulp-git": "^2.5.0",
     "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
+    "gulp-sass-variables": "^1.1.1",
     "gulp-uglify": "^3.0.0"
   }
 }

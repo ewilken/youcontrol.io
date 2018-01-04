@@ -9,7 +9,7 @@ html(lang='en')
       .container.h-100
         .row.h-100
           .col-lg-6.order-lg-12.my-auto
-            img.product-img.img-fluid.mx-auto.d-block(src='img/plug-1.png' alt='youcontrol plug')
+            img.product-img.img-fluid.mx-auto.d-block(src='img/plug-1-' + version + '.png' alt='youcontrol plug')
           .col-lg-6.order-lg-1.my-auto
             .header-content.mx-auto.text-center
               h1 Hack your own smart home!
@@ -90,31 +90,36 @@ html(lang='en')
         .row
           .col-12.col-sm-10.col-md-8.col-lg-6.mx-auto
             #mc_embed_signup
-              form#mc-embedded-subscribe-form(
-                action=""
-                method="post"
-                name="mc-embedded-subscribe-form"
-                class="validate"
-                target="_blank"
+              form.validate#mc-embedded-subscribe-form(
+                action='https://korhal.us17.list-manage.com/subscribe/post?u=4efd024f4d209c6eb40082b93&amp;id=c7487712b7'
+                method='post'
+                name='mc-embedded-subscribe-form'
+                target='_blank'
                 novalidate=true
               )
-                .input-group
-                  input.form-control.email#mce-EMAIL(
-                    type="email" 
-                    value="" 
-                    name="EMAIL"
-                    placeholder="Your email" 
-                    required=true
-                  )
-                  div(style="position: absolute; left: -5000px;" aria-hidden="true")
-                    input(type="text" name="" tabindex="-1" value="")
-                  span.input-group-btn
-                    input.btn.btn-primary.button.submit#mc-embedded-subscribe(
-                      type="submit"
-                      value="Subscribe"
-                      name="subscribe"
+                #mc_embed_signup_scroll
+                  .input-group
+                    input.form-control.email#mce-EMAIL(
+                      type='email' 
+                      value=''
+                      name='EMAIL'
+                      placeholder='Your email' 
+                      required=true
                     )
+                    div(style='position: absolute; left: -5000px;' aria-hidden='true')
+                      input(
+                        type='text'
+                        name='b_4efd024f4d209c6eb40082b93_c7487712b7'
+                        tabindex='-1'
+                        value=''
+                      )
+                    span.input-group-btn
+                      input.btn.btn-primary.button.submit#mc-embedded-subscribe(
+                        type='submit'
+                        value='Subscribe'
+                        name='subscribe'
+                      )
 
     include includes/footer.pug
-
-    script(src='app.js')
+    
+    script(src='app-' + version + '.js')

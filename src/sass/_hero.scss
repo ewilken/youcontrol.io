@@ -1,7 +1,7 @@
 header.masthead.bg-img {
-  background: url('../img/bg-hero.jpg'), $theme-secondary;
-  background: url('../img/bg-hero.jpg'), -webkit-linear-gradient(to left, $theme-secondary, $theme-tertiary);
-  background: url('../img/bg-hero.jpg'), linear-gradient(to left, $theme-secondary, $theme-tertiary);
+  background: url('../img/bg-hero-#{$version}.jpg'), $theme-secondary;
+  background: url('../img/bg-hero-#{$version}.jpg'), -webkit-linear-gradient(to left, $theme-secondary, $theme-tertiary);
+  background: url('../img/bg-hero-#{$version}.jpg'), linear-gradient(to left, $theme-secondary, $theme-tertiary);
   background-position: center;
   background-size: cover;
   position: relative;
