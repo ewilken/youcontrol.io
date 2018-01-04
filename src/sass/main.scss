@@ -6,9 +6,16 @@ $theme-tertiary:  #343a40;
 @import "hero";
 @import "languages";
 @import "features";
+@import "contact";
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "../../node_modules/startbootstrap-new-age/scss/new-age";
 @import "../../node_modules/font-awesome/scss/font-awesome";
 @import "../../node_modules/mdi/scss/materialdesignicons";
 @import "../fonts/font-mfizz.css";
+
+@include media-breakpoint-down(xs) {
+  section h2 {
+    font-size: 40px;
+  }
+}

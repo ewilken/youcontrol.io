@@ -1,0 +1,15 @@
+section.contact {
+  input.email {
+    border-radius: 300px !important;
+    margin-right: 12px;
+  }
+
+  .button {
+    background-color: #222222;
+    border-color: #222222;
+
+    &:hover {
+      background-color: darken(#222222, 15%);
+    }
+  }
+}

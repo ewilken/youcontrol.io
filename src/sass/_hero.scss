@@ -4,6 +4,7 @@ header.masthead.bg-img {
   background: url('../img/bg-hero.jpg'), linear-gradient(to left, $theme-secondary, $theme-tertiary);
   background-position: center;
   background-size: cover;
+  position: relative;
 
   .header-content {
     h1 {
@@ -15,11 +16,35 @@ header.masthead.bg-img {
     }
   }
 
+  .product-img {
+    max-width: 200px;
+    margin-bottom: 38px;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+  }
+
   @media (min-width: 992px) {
     .header-content {
       h1 {
         font-size: 58px;
       }
+    }
+
+    .product-img {
+      max-width: 260px;
+      margin-bottom: 0;
     }
   }
 }

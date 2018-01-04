@@ -2,6 +2,7 @@ var gulp        = require('gulp');
 var pug         = require('gulp-pug');
 var sass        = require('gulp-sass');
 var browserify  = require('gulp-browserify');
+var uglify      = require('gulp-uglify');
 var browserSync = require('browser-sync').create();
 
 gulp.task('default', ['pug', 'sass', 'browserify', 'copy']);
@@ -36,6 +37,7 @@ gulp.task('browserify', () => {
         insertGlobals: true,
         debug: false
     }))
+    .pipe(uglify())
     .pipe(gulp.dest('dist/'));
 });
 

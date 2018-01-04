@@ -6,6 +6,10 @@
     "type": "git",
     "url": "git://github.com/ewilken/youcontrol.io"
   },
+  "scripts": {
+    "start": "gulp dev",
+    "build": "gulp"
+  },
   "dependencies": {
     "bootstrap": "^4.0.0-beta.2",
     "font-awesome": "^4.7.0",
@@ -21,6 +25,7 @@
     "gulp": "^3.9.1",
     "gulp-browserify": "^0.5.1",
     "gulp-pug": "^3.3.0",
-    "gulp-sass": "^3.1.0"
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0"
   }
 }
