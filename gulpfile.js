@@ -87,9 +87,7 @@ function task_browsersync() {
   });
 }
 
-gulp.task('default', gulp.series(task_tag, task_pug, task_sass, task_browserify, task_copy()));
-
-gulp.task('dev', gulp.series(task_tag, task_pug, task_sass, task_browserify, task_copy(), task_browsersync), () => {
+function task_watch() {
   gulp.watch('./src/**/*.pug', gulp.series(task_tag, task_pug));
   gulp.watch('./src/sass/**/*.scss', gulp.series(task_tag, task_sass));
   gulp.watch('./src/src/app.js', gulp.series(task_tag, task_browserify));
@@ -97,4 +95,8 @@ gulp.task('dev', gulp.series(task_tag, task_pug, task_sass, task_browserify, tas
   gulp.watch('./dist/*.html', browserSync.reload);
   gulp.watch('./dist/*.js', browserSync.reload);
   gulp.watch('./dist/css/*.css', browserSync.reload);
-});
+}
+
+gulp.task('default', gulp.series(task_tag, task_pug, task_sass, task_browserify, task_copy()));
+
+gulp.task('dev', gulp.series(task_tag, task_pug, task_sass, task_browserify, task_copy(), gulp.parallel(task_browsersync, task_watch)));

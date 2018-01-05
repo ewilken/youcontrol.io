@@ -49,27 +49,27 @@ html(lang='en')
         .row
           .col-lg-4.col-md-6
             .feature-item
-              i.mdi.mdi-linux.mdi-dark
+              i.mdi.mdi-linux
               h3 Linux
               p.text-muted Upstream Linux with full root access.
           .col-lg-4.col-md-6
             .feature-item
-              i.mdi.mdi-cloud-off-outline.mdi-dark
+              i.mdi.mdi-cloud-off-outline
               h3 Cloud Free
               p.text-muted Cloud free privacy and control.
           .col-lg-4.col-md-6
             .feature-item
-              i.mdi.mdi-github-circle.mdi-dark
+              i.mdi.mdi-github-circle
               h3 Community-Driven
               p.text-muted Create and share your apps with the community.
           .col-lg-4.col-md-6
             .feature-item
-              i.mdi.mdi-wifi.mdi-dark
+              i.mdi.mdi-wifi
               h3 Standard WiFi
               p.text-muted Connect it directly to your home network.
           .col-lg-4.col-md-6
             .feature-item
-              i.mdi.mdi-chart-areaspline.mdi-dark
+              i.mdi.mdi-chart-areaspline
               h3 Energy Monitoring
               p.text-muted Measure your power consumption.
 
@@ -86,9 +86,17 @@ html(lang='en')
     section.contact.bg-primary#contact
       .container
         .section-heading
-          h2 Get notified of product launches!
+          h2 Wanna tell us your opinion?
+          p Awesome! Check out our survey to win a youcontrol.io outlet.
+          a.btn.btn-primary.button.submit(
+            href='https://goo.gl/forms/FLsmAuhI6fm25ngD3'
+            target='_blank'
+          ) Take the Survey
+          hr
         .row
           .col-12.col-sm-10.col-md-8.col-lg-6.mx-auto
+            h3
+              | Also subscribe to get notified of product launches!
             #mc_embed_signup
               form.validate#mc-embedded-subscribe-form(
                 action='https://korhal.us17.list-manage.com/subscribe/post?u=4efd024f4d209c6eb40082b93&amp;id=c7487712b7'
@@ -119,7 +127,6 @@ html(lang='en')
                         value='Subscribe'
                         name='subscribe'
                       )
-
     include includes/footer.pug
     
     script(src='app-' + version + '.js')

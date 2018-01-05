@@ -6,6 +6,10 @@ section.features {
     i {
       background: none !important;
       -webkit-text-fill-color: inherit !important;
+
+      &::before {
+        color: #212529;
+      }
     }
   }
 }

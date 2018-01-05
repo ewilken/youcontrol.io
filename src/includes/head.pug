@@ -9,3 +9,12 @@ head
   link(rel='icon' type='image/png' sizes='16x16' href='img/favicon-16x16-' + version + '.png')
   link(rel='icon' type='image/png' sizes='32x32' href='img/favicon-32x32-' + version + '.png')
   link(rel='icon' type='image/png' sizes='96x96' href='img/favicon-96x96-' + version + '.png')
+  script(
+    src='https://www.googletagmanager.com/gtag/js?id=UA-70973668-5'
+    async=true
+  )
+  script
+    | window.dataLayer = window.dataLayer || [];
+    | function gtag(){dataLayer.push(arguments);}
+    | gtag('js', new Date());
+    | gtag('config', 'UA-70973668-5');
